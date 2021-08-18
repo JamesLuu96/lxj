@@ -49,7 +49,12 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={useColorModeValue('brand.100', 'brand.900')} px={4}>
+      <Box 
+        bg={useColorModeValue('brand.100', 'brand.900')} 
+        px={4}
+        borderWidth="0 0 2px 0"
+        borderColor={useColorModeValue('secondary.300', 'secondary.700')}
+      >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -60,15 +65,15 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Link href="/#" >
-              <Box 
-              _hover={{cursor: "pointer", bg: "brand.300"}} 
+              <Box
               onClick={toHome} 
               fontFamily="Leckerli One" 
               border={`1px solid ${useColorModeValue('black', 'white')}`} 
               borderRadius="50%" 
               padding="3px"
+              className="logo"
               >
-                L+J
+                <span className="l">L</span>+<span className="j">J</span>
               </Box>
             </Link>
             <HStack

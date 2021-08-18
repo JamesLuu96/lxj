@@ -22,20 +22,29 @@ export default function Home() {
                 h="fit-content"
                 textAlign="center" 
                 margin="10px"
+                fontFamily="Lobster"
             >
-                <Text 
-                    fontFamily="Arizonia" 
-                    fontSize={["32px", "64px"]} 
-                    color="secondary.700"
-                    display="inline-block"
-                    bg={useColorModeValue("secondary.200", "secondary.300")}
-                    borderWidth="3px"
-                    borderColor="secondary.600"
-                    borderRadius="5%"
-                    padding="8px 15px"
+                <Text
+                  mt="10px"
+                  fontSize={["32px", "64px"]}
+                  fontFamily="Leckerli One"
+                  borderRadius="50%"
+                  borderWidth="2px"
+                  borderColor={useColorModeValue('black', 'white')}
+                  display="inline-block"
+                  padding="10px"
+                  className="logo"
                 >
-                    {"Linh & James"}
+                  <span className="l">L</span>+<span className="j">J</span>
                 </Text>
+
+                <Text 
+                  fontSize={["32px", "64px"]}
+                  color={useColorModeValue("brand.500", "white")}
+                >
+                  Welcome to Our Story
+                </Text>
+
             </Box>
         </PillPity>
 

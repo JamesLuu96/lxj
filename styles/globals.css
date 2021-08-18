@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.logo:hover .l{
+  color: pink
+}
+
+.logo:hover .j{
+  color: skyblue
+}
