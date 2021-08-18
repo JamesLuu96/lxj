@@ -2,7 +2,7 @@ import React from 'react'
 import {Box, Text, useColorMode, useColorModeValue} from '@chakra-ui/react'
 import PillPity from 'pill-pity';
 
-export default function index() {
+export default function BucketList() {
   const bg = useColorModeValue("brand.200", "brand.300")
 
     return (
