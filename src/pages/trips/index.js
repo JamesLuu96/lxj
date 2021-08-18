@@ -3,11 +3,13 @@ import {Box, Text, useColorMode, useColorModeValue} from '@chakra-ui/react'
 import PillPity from 'pill-pity';
 
 export default function Trips() {
+  const bg = useColorModeValue("brand.200", "brand.300")
+
     return (
         <div>
             <PillPity
         pattern={"lines-in-motion"}
-        patternFill={useColorModeValue("brand.200", "brand.300")}
+        patternFill={bg}
         bgColor="transparent"
         patternOpacity={0.3}
         width="100%"
